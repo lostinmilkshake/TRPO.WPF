@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "DataSource=(localdb)::Local;InitialCatalog=CadSystems;persistsecurityinfo=True;IntegratedSecurity=SSPI;",
+      "dynamicId": null
+    }
+  }
+}

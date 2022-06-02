@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TRPO.WPF", "TRPO.WPF\TRPO.WPF.csproj", "{5124B96B-B278-4203-843C-26A4334F427C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TRPO.Data", "TRPO.Data\TRPO.Data.csproj", "{82F8E4B7-73BF-4919-8E03-09182F07A90D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5124B96B-B278-4203-843C-26A4334F427C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5124B96B-B278-4203-843C-26A4334F427C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5124B96B-B278-4203-843C-26A4334F427C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5124B96B-B278-4203-843C-26A4334F427C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F8E4B7-73BF-4919-8E03-09182F07A90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F8E4B7-73BF-4919-8E03-09182F07A90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F8E4B7-73BF-4919-8E03-09182F07A90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F8E4B7-73BF-4919-8E03-09182F07A90D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CB674A1-328B-4F43-8339-5123E719CAD2}
+	EndGlobalSection
+EndGlobal
