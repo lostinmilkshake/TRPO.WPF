@@ -1,0 +1,7 @@
+@startuml
+class OperatingSystem {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+IEntity <|-- OperatingSystem
+@enduml

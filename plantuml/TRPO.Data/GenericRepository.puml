@@ -1,0 +1,14 @@
+@startuml
+class "GenericRepository`1"<TEntity> {
+    + GenericRepository(context:DbContext)
+    + <<virtual>> GetEntity(id:int) : TEntity
+    + <<virtual>> GetEntities() : IEnumerable<TEntity>
+    + <<virtual>> GetEntities(func:Func<TEntity, bool>) : IEnumerable<TEntity>
+    + <<virtual>> Create(entity:TEntity) : void
+    + <<virtual>> Update(id:int, entity:TEntity) : void
+    + <<virtual>> Remove(id:int) : void
+}
+class "IGenericRepository`1"<T> {
+}
+"IGenericRepository`1" "<TEntity>" <|-- "GenericRepository`1"
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class CadSystemsListView <<partial>> {
+    + CadSystemsListView(cadSystemsEditViewModel:CadSystemsListViewModel, serviceProvider:IServiceProvider)
+}
+Window <|-- CadSystemsListView
+@enduml

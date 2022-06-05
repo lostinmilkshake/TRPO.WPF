@@ -1,0 +1,10 @@
+@startuml
+class CadCost {
+    + Id : int <<get>> <<set>>
+    + Cost : double <<get>> <<set>>
+    + Period : string <<get>> <<set>>
+    + CadSystemId : int <<get>> <<set>>
+}
+IEntity <|-- CadCost
+CadCost --> "CadSystem" CadSystem
+@enduml

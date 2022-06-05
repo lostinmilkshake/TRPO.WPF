@@ -1,0 +1,17 @@
+@startuml
+class CadSystemsEditViewModel {
+    +  <<event>> PropertyChanged : PropertyChangedEventHandler? 
+    + CadSystemsEditViewModel(cadSystemRepository:IGenericRepository<CadSystem>, cadCostRepository:IGenericRepository<CadCost>, cadSystemTypeRepository:IGenericRepository<CadSystemType>, operatingSystemRepository:IGenericRepository<Data.Models.OperatingSystem>, technicalRequirementRepository:IGenericRepository<TechnicalRequirement>)
+    + CadSystemsEditViewModel()
+    OnPropertyChanged(name:string) : void
+    + SetCurrentCadSystem(id:int) : void
+    + AddNewCadSystem(selectedOperatingSystem:Data.Models.OperatingSystem, selectedCadSystemType:CadSystemType) : void
+    + DeleteCadSystem(id:int) : void
+    + PopulateCadCost() : IEnumerable<CadCost>
+    + PopulateCadSystemType() : IEnumerable<CadSystemType>
+    + PopulateOperatingSystem() : IEnumerable<Data.Models.OperatingSystem>
+}
+INotifyPropertyChanged <|-- CadSystemsEditViewModel
+CadSystemsEditViewModel o-> "CadSystem" CadSystem
+CadSystemsEditViewModel o-> "TechnicalRequirement" TechnicalRequirement
+@enduml

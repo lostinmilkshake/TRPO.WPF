@@ -1,0 +1,7 @@
+@startuml
+class CadSystemView <<partial>> {
+    + CadSystemView(cadSystemViewModel:CadCostEditViewModel, serviceProvider:IServiceProvider)
+}
+Window <|-- CadSystemView
+CadSystemView --> "_cadSystemViewModel" CadCostEditViewModel
+@enduml

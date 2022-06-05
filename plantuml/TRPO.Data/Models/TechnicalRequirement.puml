@@ -1,0 +1,10 @@
+@startuml
+class TechnicalRequirement {
+    + Id : int <<get>> <<set>>
+    + OperatingSystemId : int <<get>> <<set>>
+    + Storage : int <<get>> <<set>>
+    + Ram : int <<get>> <<set>>
+}
+IEntity <|-- TechnicalRequirement
+TechnicalRequirement --> "OperatingSystem" OperatingSystem
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+class CadSystem {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + TypeId : int <<get>> <<set>>
+    + TechnicalRequirementId : int <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+Entity <|-- CadSystem
+IEntity <|-- CadSystem
+CadSystem --> "Type" CadSystemType
+CadSystem --> "TechnicalRequirement" TechnicalRequirement
+CadSystem --> "CadCosts<CadCost>" "List`1"
+@enduml

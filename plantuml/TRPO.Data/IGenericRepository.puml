@@ -1,0 +1,10 @@
+@startuml
+interface "IGenericRepository`1"<TEntity> {
+    Create(entity:TEntity) : void
+    GetEntities() : IEnumerable<TEntity>
+    GetEntities(func:Func<TEntity, bool>) : IEnumerable<TEntity>
+    GetEntity(id:int) : TEntity
+    Remove(id:int) : void
+    Update(id:int, entity:TEntity) : void
+}
+@enduml

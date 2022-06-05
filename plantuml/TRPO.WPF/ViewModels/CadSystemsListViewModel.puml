@@ -1,0 +1,8 @@
+@startuml
+class CadSystemsListViewModel {
+    + CadSystemsListViewModel(cadSystemRepository:IGenericRepository<CadSystem>)
+}
+class "ObservableCollection`1"<T> {
+}
+CadSystemsListViewModel o-> "CadSystems<CadSystem>" "ObservableCollection`1"
+@enduml

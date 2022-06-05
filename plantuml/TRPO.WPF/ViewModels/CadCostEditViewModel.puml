@@ -1,0 +1,8 @@
+@startuml
+class CadCostEditViewModel {
+    + CadCostEditViewModel(cadCostRepository:IGenericRepository<CadCost>, cadSystemRepository:IGenericRepository<CadSystem>)
+    + AddCadCost(cadSystem:CadSystem) : void
+    + PopulateCadSystems() : IEnumerable<CadSystem>
+}
+CadCostEditViewModel o-> "CadCost" CadCost
+@enduml

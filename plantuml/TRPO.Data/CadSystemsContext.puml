@@ -1,0 +1,13 @@
+@startuml
+class CadSytemsContext {
+    + CadSytemsContext()
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- CadSytemsContext
+CadSytemsContext --> "CadCost<CadCost>" "DbSet`1"
+CadSytemsContext --> "CadSystemTypes<CadSystemType>" "DbSet`1"
+CadSytemsContext --> "CadSytems<CadSystem>" "DbSet`1"
+CadSytemsContext --> "OperatingSystems<Models.OperatingSystem>" "DbSet`1"
+CadSytemsContext --> "TechnicalRequirements<TechnicalRequirement>" "DbSet`1"
+@enduml

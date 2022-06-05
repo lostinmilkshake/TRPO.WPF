@@ -1,0 +1,8 @@
+@startuml
+class CadSystemsEditView <<partial>> {
+    + CadSystemsEditView(mainWindowViewModel:ViewModels.CadSystemsEditViewModel, context:DbContext, serviceProvider:IServiceProvider)
+    + SetCurrentCadSystem(id:int) : void
+}
+Window <|-- CadSystemsEditView
+CadSystemsEditView --> "context" DbContext
+@enduml
